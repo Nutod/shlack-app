@@ -1,5 +1,3 @@
-@use "variables" as *;
-
 :root {
   // Color Definitions
   @each $key, $value in $brand-colors {
@@ -32,10 +30,6 @@
   // Utility classes for spacing
   @each $key, $value in $sizes {
     --spacer-#{$key}: #{$value};
-  }
-
-  @each $key, $value in $spacing {
-    --space-#{$key}: #{$value};
   }
 }
 
@@ -79,5 +73,5 @@ body {
 }
 
 .flow-content > * + * {
-  margin-top: $size-400;
+  margin-top: var(--spacer-400);
 }
