@@ -75,3 +75,7 @@ body {
 .flow-content > * + * {
   margin-top: var(--spacer-400);
 }
+
+.flow-content-horizontal > * + * {
+  margin-left: var(--spacer-400);
+}

@@ -1,21 +1,21 @@
 function App() {
   return (
     <>
-      <header className="">
+      <header className="split space-between">
         <h4>Shlack App</h4>
         <nav>
-          <ul>
+          <ul className="split flow-content-horizontal">
             <li>
-              <a href="">Home</a>
+              <a href="home">Home</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="about">About</a>
             </li>
           </ul>
         </nav>
       </header>
-      <main>
-        <h3>Playing around with Code</h3>
+      <main className="flow-content">
+        <h3>App Content Below</h3>
       </main>
     </>
   )

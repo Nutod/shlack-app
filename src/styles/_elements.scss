@@ -155,3 +155,11 @@ select {
 .split {
   display: flex;
 }
+
+.space-between {
+  justify-content: space-between;
+}
+
+header {
+  margin: var(--spacer-500) 0;
+}
