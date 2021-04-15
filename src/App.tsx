@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="split space-between">
+        <h4>Shlack App</h4>
+        <nav>
+          <ul className="split flow-content-horizontal">
+            <li>
+              <a href="home">Home</a>
+            </li>
+            <li>
+              <a href="about">About</a>
+            </li>
+          </ul>
+        </nav>
       </header>
-    </div>
-  );
+      <main className="flow-content">
+        <h3>App Content Below</h3>
+      </main>
+    </>
+  )
 }
 
-export default App;
+export default App

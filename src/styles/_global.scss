@@ -1,0 +1,81 @@
+:root {
+  // Color Definitions
+  @each $key, $value in $brand-colors {
+    --color-#{$key}: #{$value};
+  }
+
+  @each $key, $value in $neutral-colors {
+    --gray-#{$key}: #{$value};
+  }
+
+  // Color Intentions
+  --backgroundColor: var(--color-white);
+  --headingColor: var(--color-black);
+  --textColor: var(--color-black-glare);
+
+  // Font Definitions
+  --font-display: 'Lato', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  // Elevations
+  --elevation-one: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --elevation-two: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --elevation-three: 0 10px 15px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --elevation-four: 0 20px 25px -5px rgba(0, 0, 0, 0.2),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  // Utility classes for spacing
+  @each $key, $value in $sizes {
+    --spacer-#{$key}: #{$value};
+  }
+}
+
+// Generating utility classes from the brand colors
+@each $key, $value in $brand-colors {
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $brand-colors {
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--textColor);
+  overflow-x: hidden;
+  font-size: 1.1rem;
+}
+
+.flow-content > * + * {
+  margin-top: var(--spacer-400);
+}
+
+.flow-content-horizontal > * + * {
+  margin-left: var(--spacer-400);
+}
