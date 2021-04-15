@@ -1,0 +1,45 @@
+$base-size: 1rem;
+
+$brand-colors: (
+  'primary': hsl(10, 62%, 58%),
+  'primary-glare': hsl(10, 62%, 68%),
+  'primary-shade': hsl(10, 62%, 48%),
+  'secondary': hsl(349, 23%, 40%),
+  'white': hsl(20, 60%, 99%),
+  'secondary-glare': hsl(349, 23%, 50%),
+  'secondary-shade': hsl(349, 23%, 30%),
+  'black': hsl(218, 24%, 9%),
+  'black-glare': hsl(217, 32%, 19%),
+);
+
+$neutral-colors: (
+  '100': hsl(0, 0, 100%),
+  '200': hsl(0, 0, 90%),
+  '300': hsl(0, 0, 80%),
+  '400': hsl(0, 0, 70%),
+  '500': hsl(0, 0, 60%),
+  '600': hsl(0, 0, 50%),
+  '700': hsl(0, 0, 40%),
+  '800': hsl(0, 0, 30%),
+  '900': hsl(0, 0, 20%),
+);
+
+$breakpoints: (
+  'extra-large': 60em,
+  'large': 48em,
+  'medium': 37.5em,
+  'small': 28.125em,
+  'really-medium': 23.4375em,
+  'really-really-small': 20em,
+);
+
+$sizes: (
+  '300': $base-size * 0.75,
+  '400': $base-size,
+  '500': $base-size * 1.33,
+  '600': $base-size * 1.77,
+  '700': $base-size * 2.36,
+  '800': $base-size * 3.15,
+  '900': $base-size * 4.2,
+  'major': $base-size * 5.6,
+);
