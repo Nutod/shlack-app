@@ -1,15 +1,12 @@
-import { css } from 'styled-components'
+import { css } from 'styled-components';
 
 export const TYPOGRAPHY = css`
+  /* This should not go into production */
   @import url('https://fonts.googleapis.com/css?family=Roboto:400|Carrois+Gothic:400');
 
   html {
     font-size: 100%;
   } /*16px*/
-
-  p {
-    margin-bottom: 1rem;
-  }
 
   h1,
   h2,
@@ -46,4 +43,4 @@ export const TYPOGRAPHY = css`
   .text_small {
     font-size: 0.833rem;
   }
-`
+`;
