@@ -22,8 +22,8 @@ export const CRITICAL = css`
     --footerBackground: var(--gray-100);
     --footerBorder: var(--gray-200);
 
-    --font-display: 'Lato', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    --font-display: 'Carrois Gothic', sans-serif;
+    --font-body: 'Roboto', sans-serif;
 
     --elevation-one: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
       0 1px 2px 0 rgba(0, 0, 0, 0.06);
