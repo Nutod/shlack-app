@@ -58,9 +58,7 @@ export const ELEMENTS = css`
   input[type='number'],
   textarea,
   select {
-    /* appearance: none; */
     width: 100%;
-    margin-bottom: var(--space-200);
 
     border: 2px solid var(--gray-300);
     border-radius: 4px;
