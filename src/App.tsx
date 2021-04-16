@@ -1,10 +1,10 @@
 function App() {
   return (
     <>
-      <header className="split space-between">
+      <header className="">
         <h4>Shlack App</h4>
         <nav>
-          <ul className="split flow-content-horizontal">
+          <ul className="">
             <li>
               <a href="home">Home</a>
             </li>
