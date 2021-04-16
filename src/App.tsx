@@ -3,6 +3,8 @@ import { container } from './styles/utils/container';
 
 const Header = styled.header`
   ${container}
+
+  margin: var(--space-700);
 `;
 
 function App() {
