@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css } from 'styled-components';
 
 export const RESET = css`
   /* Remove default padding */
@@ -71,4 +71,4 @@ export const RESET = css`
       scroll-behavior: auto !important;
     }
   }
-`
+`;

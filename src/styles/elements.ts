@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css } from 'styled-components';
 
 export const ELEMENTS = css`
   button {
@@ -9,7 +9,6 @@ export const ELEMENTS = css`
     border-radius: 2px;
     padding: 9px 30px;
     cursor: pointer;
-    margin: 1rem 0;
     transition: all 0.2s;
 
     &:hover {
@@ -51,4 +50,28 @@ export const ELEMENTS = css`
       outline: 2.5px dotted var(--color-secondary);
     }
   }
-`
+
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='password'],
+  input[type='number'],
+  textarea,
+  select {
+    /* appearance: none; */
+    width: 100%;
+    margin-bottom: var(--space-200);
+
+    border: 2px solid var(--gray-300);
+    border-radius: 4px;
+    padding: 5px 8px;
+
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      border: 2px solid var(--color-primary);
+      box-shadow: 0px 0px 0px 3.5px var(--color-primary-glare);
+    }
+  }
+`;
