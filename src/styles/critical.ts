@@ -26,14 +26,14 @@ export const CRITICAL = css`
 
     --space: 1rem;
 
-    --space-100: 0.75rem;
-    --space-200: 1rem;
-    --space-300: 1.33rem;
-    --space-400: 1.77rem;
-    --space-500: 2.36rem;
-    --space-600: 3.15rem;
-    --space-700: 4.2rem;
-    --space-800: 5.6rem;
+    --space-100: calc(0.75 * var(--space));
+    --space-200: calc(1 * var(--space));
+    --space-300: calc(1.33 * var(--space));
+    --space-400: calc(1.77 * var(--space));
+    --space-500: calc(2.36 * var(--space));
+    --space-600: calc(3.15 * var(--space));
+    --space-700: calc(4.2 * var(--space));
+    --space-800: calc(5.6 * var(--space));
 
     --elevation-one: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
       0 1px 2px 0 rgba(0, 0, 0, 0.06);
